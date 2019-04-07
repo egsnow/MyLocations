@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F0D725A225A9AD5007EB571 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D7259225A9AD5007EB571 /* HudView.swift */; };
+		0F0D725C225AA04A007EB571 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D725B225AA04A007EB571 /* Functions.swift */; };
 		0F66023E22230FDF00C0A085 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F66023D22230FDF00C0A085 /* AppDelegate.swift */; };
 		0F66024022230FDF00C0A085 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F66023F22230FDF00C0A085 /* CurrentLocationViewController.swift */; };
 		0F66024222230FDF00C0A085 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F66024122230FDF00C0A085 /* SecondViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F0D7259225A9AD5007EB571 /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		0F0D725B225AA04A007EB571 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		0F66023A22230FDF00C0A085 /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F66023D22230FDF00C0A085 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F66023F22230FDF00C0A085 /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
@@ -63,8 +67,10 @@
 				0F66023D22230FDF00C0A085 /* AppDelegate.swift */,
 				0F66023F22230FDF00C0A085 /* CurrentLocationViewController.swift */,
 				0F6ED976223D3554005A51E3 /* LocationDetailsViewController.swift */,
+				0F0D725B225AA04A007EB571 /* Functions.swift */,
 				0F66024122230FDF00C0A085 /* SecondViewController.swift */,
 				0F66024322230FDF00C0A085 /* Main.storyboard */,
+				0F0D7259225A9AD5007EB571 /* HudView.swift */,
 				0F6ED978223DC856005A51E3 /* CategoryPickerViewController.swift */,
 				0F66024622230FE300C0A085 /* Assets.xcassets */,
 				0F66024822230FE300C0A085 /* LaunchScreen.storyboard */,
@@ -105,6 +111,7 @@
 				TargetAttributes = {
 					0F66023922230FDF00C0A085 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -146,6 +153,8 @@
 			files = (
 				0F6ED979223DC856005A51E3 /* CategoryPickerViewController.swift in Sources */,
 				0F66024222230FDF00C0A085 /* SecondViewController.swift in Sources */,
+				0F0D725A225A9AD5007EB571 /* HudView.swift in Sources */,
+				0F0D725C225AA04A007EB571 /* Functions.swift in Sources */,
 				0F6ED977223D3554005A51E3 /* LocationDetailsViewController.swift in Sources */,
 				0F66023E22230FDF00C0A085 /* AppDelegate.swift in Sources */,
 				0F66024022230FDF00C0A085 /* CurrentLocationViewController.swift in Sources */,
@@ -303,7 +312,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mediatech.EricSnow.homework.MyLocations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -321,7 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mediatech.EricSnow.homework.MyLocations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
