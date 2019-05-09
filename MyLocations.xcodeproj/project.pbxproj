@@ -20,6 +20,8 @@
 		0FBB25822263AE51000557E6 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FBB25802263AE51000557E6 /* DataModel.xcdatamodeld */; };
 		0FBB25852263B1D2000557E6 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBB25832263B1D2000557E6 /* Location+CoreDataClass.swift */; };
 		0FBB25862263B1D2000557E6 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBB25842263B1D2000557E6 /* Location+CoreDataProperties.swift */; };
+		0FDF81E92283D1E00071FA22 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF81E82283D1E00071FA22 /* LocationsViewController.swift */; };
+		0FDF81ED2283D8BB0071FA22 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF81EC2283D8BB0071FA22 /* LocationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		0FBB25812263AE51000557E6 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		0FBB25832263B1D2000557E6 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0FBB25842263B1D2000557E6 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0FDF81E82283D1E00071FA22 /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		0FDF81EC2283D8BB0071FA22 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		0F66023122230FDF00C0A085 = {
 			isa = PBXGroup;
 			children = (
+				0FDF81EC2283D8BB0071FA22 /* LocationCell.swift */,
 				0FBB25832263B1D2000557E6 /* Location+CoreDataClass.swift */,
 				0FBB25842263B1D2000557E6 /* Location+CoreDataProperties.swift */,
 				0F66023C22230FDF00C0A085 /* MyLocations */,
@@ -79,6 +84,7 @@
 				0F0D725B225AA04A007EB571 /* Functions.swift */,
 				0F66024122230FDF00C0A085 /* SecondViewController.swift */,
 				0F66024322230FDF00C0A085 /* Main.storyboard */,
+				0FDF81E82283D1E00071FA22 /* LocationsViewController.swift */,
 				0F0D7259225A9AD5007EB571 /* HudView.swift */,
 				0F6ED978223DC856005A51E3 /* CategoryPickerViewController.swift */,
 				0F66024622230FE300C0A085 /* Assets.xcassets */,
@@ -164,7 +170,9 @@
 				0FBB25822263AE51000557E6 /* DataModel.xcdatamodeld in Sources */,
 				0F66024222230FDF00C0A085 /* SecondViewController.swift in Sources */,
 				0F0D725A225A9AD5007EB571 /* HudView.swift in Sources */,
+				0FDF81E92283D1E00071FA22 /* LocationsViewController.swift in Sources */,
 				0FBB25862263B1D2000557E6 /* Location+CoreDataProperties.swift in Sources */,
+				0FDF81ED2283D8BB0071FA22 /* LocationCell.swift in Sources */,
 				0F0D725C225AA04A007EB571 /* Functions.swift in Sources */,
 				0F6ED977223D3554005A51E3 /* LocationDetailsViewController.swift in Sources */,
 				0FBB25852263B1D2000557E6 /* Location+CoreDataClass.swift in Sources */,
