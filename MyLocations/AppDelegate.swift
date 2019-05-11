@@ -29,17 +29,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let tabController = window!.rootViewController as! UITabBarController
         if let tabViewControllers = tabController.viewControllers {
-            var navController = tabViewControllers[0]
-                as! UINavigationController
-            let controller1 = navController.viewControllers.first
-                as! CurrentLocationViewController
+            var navController = tabViewControllers[0] as! UINavigationController
+            let controller1 = navController.viewControllers.first as! CurrentLocationViewController
             controller1.managedObjectContext = managedObjectContext
-            navController = tabViewControllers[1]
-                as! UINavigationController
-            let controller2 = navController.viewControllers.first
-                as! LocationsViewController
+            navController = tabViewControllers[1] as! UINavigationController
+            let controller2 = navController.viewControllers.first as! LocationsViewController
             controller2.managedObjectContext = managedObjectContext
             let _ = controller2.view
+            navController = tabViewControllers[2] as! UINavigationController
+            let controller3 = navController.viewControllers.first as! MapViewController
+            controller3.managedObjectContext = managedObjectContext
         }
         print(applicationDocumentsDirectory)
         listenForFatalCoreDataNotifications()
