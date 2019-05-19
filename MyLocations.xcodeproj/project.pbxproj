@@ -24,6 +24,8 @@
 		0FDF81ED2283D8BB0071FA22 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF81EC2283D8BB0071FA22 /* LocationCell.swift */; };
 		0FDF81F0228781B20071FA22 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FDF81EF228781B20071FA22 /* MapKit.framework */; };
 		0FDF81F2228782140071FA22 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF81F1228782140071FA22 /* MapViewController.swift */; };
+		0FEB39612291F24400DD149B /* String+RandomWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEB39602291F24400DD149B /* String+RandomWord.swift */; };
+		0FEB39632291F29200DD149B /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEB39622291F29200DD149B /* UIImage+Resize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		0FDF81EC2283D8BB0071FA22 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		0FDF81EF228781B20071FA22 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0FDF81F1228782140071FA22 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0FEB39602291F24400DD149B /* String+RandomWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+RandomWord.swift"; sourceTree = "<group>"; };
+		0FEB39622291F29200DD149B /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 			children = (
 				0FBB25832263B1D2000557E6 /* Location+CoreDataClass.swift */,
 				0FBB25842263B1D2000557E6 /* Location+CoreDataProperties.swift */,
+				0FEB39602291F24400DD149B /* String+RandomWord.swift */,
+				0FEB39622291F29200DD149B /* UIImage+Resize.swift */,
 				0F66023C22230FDF00C0A085 /* MyLocations */,
 				0F66023B22230FDF00C0A085 /* Products */,
 				0FDF81EE228781B20071FA22 /* Frameworks */,
@@ -194,9 +200,11 @@
 				0FBB25862263B1D2000557E6 /* Location+CoreDataProperties.swift in Sources */,
 				0FDF81F2228782140071FA22 /* MapViewController.swift in Sources */,
 				0FDF81ED2283D8BB0071FA22 /* LocationCell.swift in Sources */,
+				0FEB39632291F29200DD149B /* UIImage+Resize.swift in Sources */,
 				0F0D725C225AA04A007EB571 /* Functions.swift in Sources */,
 				0F6ED977223D3554005A51E3 /* LocationDetailsViewController.swift in Sources */,
 				0FBB25852263B1D2000557E6 /* Location+CoreDataClass.swift in Sources */,
+				0FEB39612291F24400DD149B /* String+RandomWord.swift in Sources */,
 				0F66023E22230FDF00C0A085 /* AppDelegate.swift in Sources */,
 				0F66024022230FDF00C0A085 /* CurrentLocationViewController.swift in Sources */,
 			);
