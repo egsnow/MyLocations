@@ -4,10 +4,8 @@
 //
 //  Created by Eric Snow on 5/19/19.
 //  Copyright © 2019 Eric Snow. All rights reserved.
-//
 
 import UIKit
-
 
 extension UIImage {
     func resized(withBounds bounds: CGSize) -> UIImage {

@@ -4,8 +4,6 @@
 //
 //  Created by Eric Snow on 4/14/19.
 //  Copyright © 2019 Eric Snow. All rights reserved.
-//
-//
 
 import Foundation
 import CoreData
@@ -15,11 +13,9 @@ import MapKit
 
 public class Location: NSManagedObject, MKAnnotation {
     
-    
     public var coordinate: CLLocationCoordinate2D {
         return CLLocationCoordinate2DMake(latitude, longitude)
     }
-    
     
     public var title: String? {
         if locationDescription.isEmpty {
@@ -29,16 +25,13 @@ public class Location: NSManagedObject, MKAnnotation {
         }
     }
     
-    
     public var subtitle: String? {
         return category
     }
     
-    
     var hasPhoto: Bool {
         return photoID != nil
     }
-    
     
     var photoURL: URL {
         assert(photoID != nil, "No photo ID set")
@@ -46,11 +39,9 @@ public class Location: NSManagedObject, MKAnnotation {
         return applicationDocumentsDirectory.appendingPathComponent(filename)
     }
     
-    
     var photoImage: UIImage? {
         return UIImage(contentsOfFile: photoURL.path)
     }
-    
     
     class func nextPhotoID() -> Int {
         let userDefaults = UserDefaults.standard
@@ -59,7 +50,6 @@ public class Location: NSManagedObject, MKAnnotation {
         userDefaults.synchronize()
         return currentID
     }
-    
     
     func removePhotoFile() {
         if hasPhoto {

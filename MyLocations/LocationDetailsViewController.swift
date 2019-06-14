@@ -4,12 +4,12 @@
 //
 //  Created by Eric Snow on 3/16/19.
 //  Copyright © 2019 Eric Snow. All rights reserved.
-//
 
 import UIKit
 import CoreLocation
 import CoreData
-
+import Alamofire
+import SwiftyJSON
 
 private let dateFormatter: DateFormatter = {
     let formatter = DateFormatter()
@@ -18,9 +18,7 @@ private let dateFormatter: DateFormatter = {
     return formatter
 }()
 
-
 class LocationDetailsViewController: UITableViewController {
-    
     
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var categoryLabel: UILabel!
@@ -31,7 +29,10 @@ class LocationDetailsViewController: UITableViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var addPhotoLabel: UILabel!
     @IBOutlet weak var imageHeight: NSLayoutConstraint!
+    @IBOutlet weak var weatherLabel: UILabel!
     
+    let WEATHER_API_KEY = "53c074da5165f6efc9d69e8a7cdb04e9"
+    let WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather"
     
     var managedObjectContext: NSManagedObjectContext!
     var coordinate = CLLocationCoordinate2D(latitude: 0, longitude: 0)
@@ -41,19 +42,19 @@ class LocationDetailsViewController: UITableViewController {
     var image: UIImage?
     var descriptionText = ""
     var observer: Any!
+    var weather = ""
     var locationToEdit: Location? {
         didSet {
             if let location = locationToEdit {
                 descriptionText = location.locationDescription
                 categoryName = location.category
                 date = location.date
-                coordinate = CLLocationCoordinate2DMake(
-                    location.latitude, location.longitude)
+                coordinate = CLLocationCoordinate2DMake(location.latitude, location.longitude)
                 placemark = location.placemark
             }
         }
     }
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +66,7 @@ class LocationDetailsViewController: UITableViewController {
                 }
             }
         }
+        getWeather()
         descriptionTextView.text = descriptionText
         categoryLabel.text = categoryName
         latitudeLabel.text = String(format: "%.8f", coordinate.latitude)
@@ -80,6 +82,7 @@ class LocationDetailsViewController: UITableViewController {
         tableView.addGestureRecognizer(gestureRecognizer)
         listenForBackgroundNotification()
     }
+    
     
     // MARK:- Actions
     @IBAction func done() {
@@ -201,6 +204,53 @@ class LocationDetailsViewController: UITableViewController {
     }
     
     
+    // MARK:- API/JSON
+    func getWeather() {
+        let lat = String(format: "%.8f", coordinate.latitude)
+        let lon = String(format: "%.8f", coordinate.longitude)
+        var paramsForAPI : [String : String] = ["lat" : lat, "lon" : lon, "appid" : WEATHER_API_KEY]
+        AF.request(WEATHER_URL, method: .get, parameters: paramsForAPI).responseJSON {
+            response in
+            switch response.result {
+            case .success(let json) :
+                let swiftyJSONData = JSON(json)
+                self.updateWeatherData(json: swiftyJSONData)
+                
+            case .failure(let error) :
+                print("FAILED TO GET WEATHER: \(error)")
+                self.weatherLabel.text = "Weather Not Found"
+
+            }
+        }
+        print(paramsForAPI)
+        weatherLabel.text = weather
+    }
+    
+    
+    func updateWeatherData(json: JSON) {
+        
+        guard let tempK = json["main"]["temp"].double else {
+            return
+        }
+        let tempC = tempK - 273.15
+        let tempF = Int(9.0 / 5.0 * (tempC + 32.0))
+        print(tempF)
+        print("===========================")
+        
+        guard let currentCond = json["weather"][0]["description"].string  else {
+            return
+        }
+        print(currentCond)
+        
+        weather = "\(tempF)" + "° - " + currentCond.capitalized
+        
+        weatherLabel.text = "\(weather)"
+    }
+
+        
+    
+    
+    
     // MARK:- Table View Delegates
     override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         if indexPath.section == 0 || indexPath.section == 1 {
@@ -224,6 +274,7 @@ class LocationDetailsViewController: UITableViewController {
 
 
 extension LocationDetailsViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
     
     // MARK:- Image Helper Methods
     func takePhotoWithCamera() {
@@ -291,8 +342,4 @@ extension LocationDetailsViewController: UIImagePickerControllerDelegate, UINavi
         selection.backgroundColor = UIColor(white: 1.0, alpha: 0.3)
         cell.selectedBackgroundView = selection
     }
-    
-    
-    
-    
 }
