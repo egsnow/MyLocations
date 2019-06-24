@@ -29,6 +29,7 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        automaticallyAdjustsScrollViewInsets = false
         updateLocations()
         if !locations.isEmpty {
             showLocations()

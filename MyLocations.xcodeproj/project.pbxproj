@@ -3,12 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F03F90A22B8154100D12D08 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F03F90922B8154100D12D08 /* GoogleService-Info.plist */; };
+		0F085A4B22B96EBD00D4C051 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F085A4A22B96EBD00D4C051 /* CustomTextField.swift */; };
+		0F085A4D22B980CA00D4C051 /* SelectLoginTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F085A4C22B980CA00D4C051 /* SelectLoginTypeVC.swift */; };
+		0F085A4F22BC08C900D4C051 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F085A4E22BC08C900D4C051 /* ChatCell.swift */; };
 		0F0D725A225A9AD5007EB571 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D7259225A9AD5007EB571 /* HudView.swift */; };
 		0F0D725C225AA04A007EB571 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D725B225AA04A007EB571 /* Functions.swift */; };
+		0F423D1522BC107C00804681 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F423D1422BC107C00804681 /* ChatVC.swift */; };
+		0F423D1722BD54A800804681 /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F423D1622BD54A800804681 /* ChatCell.xib */; };
+		0F423D1922BD6EEA00804681 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F423D1822BD6EEA00804681 /* Message.swift */; };
 		0F66023E22230FDF00C0A085 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F66023D22230FDF00C0A085 /* AppDelegate.swift */; };
 		0F66024022230FDF00C0A085 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F66023F22230FDF00C0A085 /* CurrentLocationViewController.swift */; };
 		0F66024522230FDF00C0A085 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F66024322230FDF00C0A085 /* Main.storyboard */; };
@@ -18,6 +25,8 @@
 		0FBB25822263AE51000557E6 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FBB25802263AE51000557E6 /* DataModel.xcdatamodeld */; };
 		0FBB25852263B1D2000557E6 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBB25832263B1D2000557E6 /* Location+CoreDataClass.swift */; };
 		0FBB25862263B1D2000557E6 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBB25842263B1D2000557E6 /* Location+CoreDataProperties.swift */; };
+		0FC00E1022B82775002DBD72 /* LoginRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC00E0F22B82775002DBD72 /* LoginRegisterVC.swift */; };
+		0FC309AC22C14EBB003D2D22 /* UIImage+Downloaded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC309AB22C14EBB003D2D22 /* UIImage+Downloaded.swift */; };
 		0FDF81E92283D1E00071FA22 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF81E82283D1E00071FA22 /* LocationsViewController.swift */; };
 		0FDF81ED2283D8BB0071FA22 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF81EC2283D8BB0071FA22 /* LocationCell.swift */; };
 		0FDF81F0228781B20071FA22 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FDF81EF228781B20071FA22 /* MapKit.framework */; };
@@ -32,8 +41,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F03F90922B8154100D12D08 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0F085A4A22B96EBD00D4C051 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		0F085A4C22B980CA00D4C051 /* SelectLoginTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLoginTypeVC.swift; sourceTree = "<group>"; };
+		0F085A4E22BC08C900D4C051 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		0F0D7259225A9AD5007EB571 /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
 		0F0D725B225AA04A007EB571 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		0F423D1422BC107C00804681 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		0F423D1622BD54A800804681 /* ChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatCell.xib; sourceTree = "<group>"; };
+		0F423D1822BD6EEA00804681 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		0F66023A22230FDF00C0A085 /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F66023D22230FDF00C0A085 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F66023F22230FDF00C0A085 /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +61,8 @@
 		0FBB25812263AE51000557E6 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		0FBB25832263B1D2000557E6 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0FBB25842263B1D2000557E6 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0FC00E0F22B82775002DBD72 /* LoginRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegisterVC.swift; sourceTree = "<group>"; };
+		0FC309AB22C14EBB003D2D22 /* UIImage+Downloaded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Downloaded.swift"; sourceTree = "<group>"; };
 		0FDF81E82283D1E00071FA22 /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		0FDF81EC2283D8BB0071FA22 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		0FDF81EF228781B20071FA22 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -107,12 +125,21 @@
 				0FDF81EC2283D8BB0071FA22 /* LocationCell.swift */,
 				0F6ED976223D3554005A51E3 /* LocationDetailsViewController.swift */,
 				0FDF81E82283D1E00071FA22 /* LocationsViewController.swift */,
+				0FC00E0F22B82775002DBD72 /* LoginRegisterVC.swift */,
+				0F085A4C22B980CA00D4C051 /* SelectLoginTypeVC.swift */,
 				0F66024322230FDF00C0A085 /* Main.storyboard */,
+				0FC309AB22C14EBB003D2D22 /* UIImage+Downloaded.swift */,
+				0F423D1622BD54A800804681 /* ChatCell.xib */,
+				0F423D1822BD6EEA00804681 /* Message.swift */,
+				0F085A4E22BC08C900D4C051 /* ChatCell.swift */,
+				0F423D1422BC107C00804681 /* ChatVC.swift */,
+				0F085A4A22B96EBD00D4C051 /* CustomTextField.swift */,
 				0FFAEEF2229A33F300E83DA2 /* MyImagePickerController.swift */,
 				0FDF81F1228782140071FA22 /* MapViewController.swift */,
 				0F66024622230FE300C0A085 /* Assets.xcassets */,
 				0FFAEEF0229A336800E83DA2 /* MyTabBarController.swift */,
 				0F66024B22230FE300C0A085 /* Info.plist */,
+				0F03F90922B8154100D12D08 /* GoogleService-Info.plist */,
 				0FBB25802263AE51000557E6 /* DataModel.xcdatamodeld */,
 				0FFAEEF4229A4C0100E83DA2 /* Sound.caf */,
 			);
@@ -134,7 +161,6 @@
 				96307B79021FD225D6A85BB2 /* Pods-MyLocations.debug.xcconfig */,
 				87B85C3CF4E533E747158FE0 /* Pods-MyLocations.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -205,6 +231,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F66024722230FE300C0A085 /* Assets.xcassets in Resources */,
+				0F03F90A22B8154100D12D08 /* GoogleService-Info.plist in Resources */,
+				0F423D1722BD54A800804681 /* ChatCell.xib in Resources */,
 				0FFAEEF5229A4C0100E83DA2 /* Sound.caf in Resources */,
 				0F66024522230FDF00C0A085 /* Main.storyboard in Resources */,
 			);
@@ -264,17 +292,24 @@
 				0F0D725A225A9AD5007EB571 /* HudView.swift in Sources */,
 				0FFAEEF3229A33F300E83DA2 /* MyImagePickerController.swift in Sources */,
 				0FDF81E92283D1E00071FA22 /* LocationsViewController.swift in Sources */,
+				0F085A4B22B96EBD00D4C051 /* CustomTextField.swift in Sources */,
+				0F423D1522BC107C00804681 /* ChatVC.swift in Sources */,
 				0FBB25862263B1D2000557E6 /* Location+CoreDataProperties.swift in Sources */,
+				0FC309AC22C14EBB003D2D22 /* UIImage+Downloaded.swift in Sources */,
 				0FDF81F2228782140071FA22 /* MapViewController.swift in Sources */,
 				0FDF81ED2283D8BB0071FA22 /* LocationCell.swift in Sources */,
 				0FEB39632291F29200DD149B /* UIImage+Resize.swift in Sources */,
 				0F0D725C225AA04A007EB571 /* Functions.swift in Sources */,
 				0FFAEEF1229A336800E83DA2 /* MyTabBarController.swift in Sources */,
+				0FC00E1022B82775002DBD72 /* LoginRegisterVC.swift in Sources */,
 				0F6ED977223D3554005A51E3 /* LocationDetailsViewController.swift in Sources */,
 				0FBB25852263B1D2000557E6 /* Location+CoreDataClass.swift in Sources */,
 				0FEB39612291F24400DD149B /* String+RandomWord.swift in Sources */,
+				0F423D1922BD6EEA00804681 /* Message.swift in Sources */,
+				0F085A4F22BC08C900D4C051 /* ChatCell.swift in Sources */,
 				0F66023E22230FDF00C0A085 /* AppDelegate.swift in Sources */,
 				0F66024022230FDF00C0A085 /* CurrentLocationViewController.swift in Sources */,
+				0F085A4D22B980CA00D4C051 /* SelectLoginTypeVC.swift in Sources */,
 				0FFAEEEF229A277200E83DA2 /* String+AddText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -50,6 +50,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        automaticallyAdjustsScrollViewInsets = false
         updateLabels()
         loadSoundEffect("Sound.caf")
     }

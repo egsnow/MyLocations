@@ -58,6 +58,7 @@ class LocationDetailsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        automaticallyAdjustsScrollViewInsets = false
         if let location = locationToEdit {
             title = "Edit Location"
             if location.hasPhoto {
@@ -241,9 +242,7 @@ class LocationDetailsViewController: UITableViewController {
             return
         }
         print(currentCond)
-        
         weather = "\(tempF)" + "° - " + currentCond.capitalized
-        
         weatherLabel.text = "\(weather)"
     }
 

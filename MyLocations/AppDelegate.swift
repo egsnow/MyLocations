@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,9 +25,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return container
     }()
     
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         customizeAppearance()
+        FirebaseApp.configure()
+        let myDatabase = Database.database().reference()
+        myDatabase.setValue("I made a datebase!")
+        
+        
+        
         let tabController = window!.rootViewController as! UITabBarController
         if let tabViewControllers = tabController.viewControllers {
             var navController = tabViewControllers[0] as! UINavigationController
