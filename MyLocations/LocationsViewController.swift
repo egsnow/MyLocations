@@ -32,7 +32,6 @@ class LocationsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         automaticallyAdjustsScrollViewInsets = false
-
         performFetch()
         navigationItem.rightBarButtonItem = editButtonItem
     }

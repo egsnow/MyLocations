@@ -6,13 +6,7 @@
 //  Copyright © 2019 Eric Snow. All rights reserved.
 //
 
-class Message {
-    
+struct Message {
     var senderName = ""
     var messageBody = ""
-    
-    
-    
-    
-    
 }

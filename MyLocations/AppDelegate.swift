@@ -28,10 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         customizeAppearance()
         FirebaseApp.configure()
-        let myDatabase = Database.database().reference()
-        myDatabase.setValue("I made a datebase!")
-        
-        
+
+//        let myDatabase = Database.database().reference()
+//        myDatabase.setValue("I made a datebase!")
         
         let tabController = window!.rootViewController as! UITabBarController
         if let tabViewControllers = tabController.viewControllers {

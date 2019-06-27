@@ -685,61 +685,20 @@
                                     <action selector="registerTapped:" destination="kju-Iv-dFe" eventType="touchUpInside" id="AHp-CA-ugd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXZ-cA-cvO">
-                                <rect key="frame" x="0.0" y="663" width="414" height="50"/>
-                                <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="FKj-2P-Jy5"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <state key="normal" title="Randomize Avatar">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="generateRandomAvatar:" destination="kju-Iv-dFe" eventType="touchUpInside" id="TAF-57-9A6"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jIR-sc-dNw">
-                                <rect key="frame" x="57" y="225.66666666666663" width="300" height="300"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="ETZ-y5-P7W"/>
-                                    <constraint firstAttribute="height" constant="300" id="SQt-v7-ryi"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avatars by: adorable.io " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Evg-na-Lrb">
-                                <rect key="frame" x="57" y="528.66666666666663" width="300" height="15"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="FPt-Aj-VoE"/>
-                                    <constraint firstAttribute="height" constant="15" id="oZs-9d-doV"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="owc-WE-kUU" firstAttribute="trailing" secondItem="3zZ-nM-VGS" secondAttribute="trailing" id="0Pt-K2-JLv"/>
-                            <constraint firstItem="kXZ-cA-cvO" firstAttribute="top" secondItem="jIR-sc-dNw" secondAttribute="bottom" constant="137.5" id="3Qy-CL-yS3"/>
-                            <constraint firstItem="3zZ-nM-VGS" firstAttribute="top" secondItem="kXZ-cA-cvO" secondAttribute="bottom" id="4jQ-EV-YQL"/>
-                            <constraint firstItem="Evg-na-Lrb" firstAttribute="centerX" secondItem="rOy-in-scv" secondAttribute="centerX" id="D0f-zj-7HP"/>
                             <constraint firstItem="vGN-J0-jrt" firstAttribute="top" secondItem="3zZ-nM-VGS" secondAttribute="bottom" id="F2N-LH-3PQ"/>
                             <constraint firstItem="vGN-J0-jrt" firstAttribute="leading" secondItem="owc-WE-kUU" secondAttribute="leading" id="GQv-qB-DPy"/>
-                            <constraint firstItem="owc-WE-kUU" firstAttribute="trailing" secondItem="kXZ-cA-cvO" secondAttribute="trailing" id="NIm-oE-KlN"/>
-                            <constraint firstItem="kXZ-cA-cvO" firstAttribute="leading" secondItem="owc-WE-kUU" secondAttribute="leading" id="SrN-BV-n8a"/>
                             <constraint firstItem="3zZ-nM-VGS" firstAttribute="leading" secondItem="owc-WE-kUU" secondAttribute="leading" id="cqs-OQ-7TY"/>
-                            <constraint firstItem="jIR-sc-dNw" firstAttribute="centerX" secondItem="rOy-in-scv" secondAttribute="centerX" id="jSo-5p-niT"/>
                             <constraint firstItem="owc-WE-kUU" firstAttribute="trailing" secondItem="vGN-J0-jrt" secondAttribute="trailing" id="nID-D1-s8h"/>
-                            <constraint firstItem="Evg-na-Lrb" firstAttribute="top" secondItem="jIR-sc-dNw" secondAttribute="bottom" constant="3" id="nXL-6c-Wcy"/>
                             <constraint firstItem="owc-WE-kUU" firstAttribute="bottom" secondItem="vGN-J0-jrt" secondAttribute="bottom" id="qhW-Xi-Efu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="owc-WE-kUU"/>
                     </view>
                     <navigationItem key="navigationItem" id="l1o-HX-uPY"/>
                     <connections>
-                        <outlet property="avatarButton" destination="kXZ-cA-cvO" id="Hx5-74-yKK"/>
-                        <outlet property="avatarImage" destination="jIR-sc-dNw" id="xmx-H8-Uhw"/>
                         <outlet property="loginButton" destination="vGN-J0-jrt" id="TLw-eC-aWN"/>
                         <outlet property="registerButton" destination="3zZ-nM-VGS" id="yiW-lf-BRi"/>
                         <segue destination="N5y-K6-cL6" kind="show" identifier="SelectionType" id="hHX-ev-QlW"/>
@@ -823,7 +782,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hHh-aN-bFI">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hHh-aN-bFI">
                                 <rect key="frame" x="0.0" y="88" width="414" height="655"/>
                                 <color key="backgroundColor" red="0.13150380710659904" green="0.13150380710659904" blue="0.13150380710659904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -832,7 +791,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Omx-Hs-fNA" id="THt-uo-2ZR">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.13150380710000001" green="0.13150380710000001" blue="0.13150380710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -863,6 +822,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
                                         <state key="normal" title="SEND"/>
+                                        <connections>
+                                            <action selector="sendPressed:" destination="ise-mY-LVm" eventType="touchUpInside" id="FHL-jd-NHC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -903,6 +865,7 @@
                         <outlet property="chatTableView" destination="hHh-aN-bFI" id="hJj-Cm-WBf"/>
                         <outlet property="sendButton" destination="ffa-Zf-Nke" id="YQh-DR-LAT"/>
                         <outlet property="senderViewHeight" destination="UK8-Ef-RIa" id="4tZ-Uv-GbH"/>
+                        <outlet property="tableView" destination="hHh-aN-bFI" id="7mo-5l-YsA"/>
                         <outlet property="textField" destination="2Af-kG-uOx" id="HNm-DD-NG8"/>
                     </connections>
                 </viewController>
